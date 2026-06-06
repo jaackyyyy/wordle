@@ -118,7 +118,6 @@ def play_game():
     print(f"{DIM}  {GREEN}   {RESET} correct  {YELLOW}   {RESET} wrong spot  {GRAY}   {RESET} not in word\n{RESET}")
 
     while len(guesses) < MAX_GUESSES:
-        remaining = MAX_GUESSES - len(guesses)
         try:
             raw = input(f"  Guess {len(guesses)+1}/{MAX_GUESSES}: ").strip().lower()
         except (EOFError, KeyboardInterrupt):
